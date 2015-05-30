@@ -13,7 +13,6 @@ Also we found some related projects:
 - https://github.com/fenicento/carSharing_paths
 - https://github.com/XavierGimenez/innovadata-2013
 - https://github.com/tillnagel/urbanTrails
-- https://github.com/ericfischer/flowmap
 - https://github.com/nefstath/AIA_Airport_Connections
 - https://github.com/Azzur/Projet-Twitter-Unfolding
 - https://github.com/anneEverars/LAK_Unfolding

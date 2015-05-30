@@ -35,15 +35,15 @@ void draw() {
   rotateZ(radians(my));
 
   // to mark origin and help view 3d
-  noFill();
-  stroke(100);
-  box(20);
-  pushMatrix();
-  translate(100, 5, -100);
-  stroke(200);
-  fill(0, 20);
-  box(600, 2, 600);
-  popMatrix();
+//  noFill();
+//  stroke(100);
+//  box(20);
+//  pushMatrix();
+//  translate(100, 5, -100);
+//  stroke(200);
+//  fill(0, 20);
+//  box(600, 2, 600);
+//  popMatrix();
 
 
 
@@ -76,7 +76,7 @@ void draw() {
   strokeWeight(1.5);
 
   //draw at origin
-  translate(-initial_x, 0);
+//  translate(-initial_x, 0);
 
 
 
@@ -87,17 +87,17 @@ void draw() {
   }
   endShape();
   strokeWeight(1);
-  
-  
-  //draw a ball
-  if (!animating) {
-    float ball_x = pts.get(frameCount%pts.size()).x;
-    float ball_y = pts.get(frameCount%pts.size()).y;
-    translate(ball_x, ball_y);
-    noStroke();
-    fill(220, 190, 35);
-    sphere(4);
-  }
+//  
+//  
+//  //draw a ball
+//  if (!animating) {
+//    float ball_x = pts.get(frameCount%pts.size()).x;
+//    float ball_y = pts.get(frameCount%pts.size()).y;
+//    translate(ball_x, ball_y);
+//    noStroke();
+//    fill(220, 190, 35);
+//    sphere(4);
+//  }
 }
 
 
