@@ -49,17 +49,26 @@ class MyCurve{
     
     stroke(0);
     fill(0);
-    strokeWeight(0.2);
+//    strokeWeight(0.2);
+    strokeWeight(1);
     
 //    ellipse(xc, yc, 1, 1);
     ellipse(xo, yo, 4, 4);
     ellipse(xe, ye, 4, 4);
     
+    //ellipse equation
+    //x = a*cos(t)    
+    //y = b*sin(t)
+    //slanted, rotated
+    //x' = a*cos(t)*cos(theta) - b*sin(t)*sin(theta) 
+    //y' = a*cos(t)*sin(theta) + b*sin(t)*cos(theta)
     for (float i = 0; i < 90; i++) {
       float x1 = (float)(Math.cos(radians(i))*ao+xc);
       float y1 = (float)(-Math.sin(radians(i))*bo+yo);
       float x2 = (float)(Math.cos(radians(i+1))*ao+xc);
       float y2 = (float)(-Math.sin(radians(i+1))*bo+yo);
+//      if(i == 0)
+//        println(x1,y1,x2,y2);
       line(x1,y1,x2,y2);
     }
     
@@ -68,6 +77,8 @@ class MyCurve{
       float y1 = (float)(-Math.sin(radians(i))*be+ye);
       float x2 = (float)(Math.cos(radians(i+1))*ae+xc);
       float y2 = (float)(-Math.sin(radians(i+1))*be+ye);
+//      if(i == 0)
+//        println(x1,y1,x2,y2);
       line(x1,y1,x2,y2);
     }
   }
@@ -78,6 +89,7 @@ void setup(){
 }
 
 void draw(){
+  (new MyCurve(new PVector(600, 300), new PVector(300,400))).show();
   (new MyCurve(new PVector(300, 450), new PVector(100,500))).show();
   (new MyCurve(new PVector(500, 450), new PVector(100,500))).show();
   (new MyCurve(new PVector(400, 400), new PVector(100,500))).show();
