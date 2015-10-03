@@ -24,7 +24,7 @@ void show(float x, float y, float a, float b, float slant, float a2){
     float y2 = (float)(-b*Math.sin(i+r1)+y);
 //    if(i == 0)
 //      println(x1,y1,x2,y2);
-    line(x1,y1,x2,y2);
+//    line(x1,y1,x2,y2);
   }
   
   //a = 100
